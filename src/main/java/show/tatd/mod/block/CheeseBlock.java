@@ -61,14 +61,15 @@ public class CheeseBlock extends PieBlock {
         } else {
             ItemStack sliceStack = this.getPieSliceItem();
             FoodComponent sliceFood = sliceStack.getComponents().get(DataComponentTypes.FOOD);
-            playerIn.getHungerManager().eat(sliceFood);
             if (sliceFood != null) {
+                playerIn.getHungerManager().eat(sliceFood);
                 Iterator var7 = sliceFood.effects().iterator();
 
-                while (var7.hasNext()) {
-                    Pair<StatusEffectInstance, Float> pair = (Pair) var7.next();
-                    if (!level.isClient && pair.getFirst() != null && level.random.nextFloat() < (Float) pair.getSecond()) {
-                        playerIn.addStatusEffect(new StatusEffectInstance((StatusEffectInstance) pair.getFirst()));
+                while(var7.hasNext())
+                {
+                    FoodComponent.StatusEffectEntry effect = (FoodComponent.StatusEffectEntry)var7.next();
+                    if (!level.isClient && effect != null && level.random.nextFloat() < effect.probability()) {
+                        playerIn.addStatusEffect(effect.effect());
                     }
                 }
             }

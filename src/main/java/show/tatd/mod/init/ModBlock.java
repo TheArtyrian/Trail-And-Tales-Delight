@@ -38,6 +38,10 @@ public class ModBlock {
             new CheeseBlock(AbstractBlock.Settings.copy(Blocks.HONEY_BLOCK).strength(0.5F, 6.0F),
                     () -> ModItem.CHEESE_SLICE));
 
+    public static final Block CHERRY_CHEESE_WHEEL = register("cherry_cheese_wheel",
+            new CheeseBlock(AbstractBlock.Settings.copy(Blocks.HONEY_BLOCK).strength(0.5F, 6.0F),
+                    () -> ModItem.CHERRY_CHEESE_SLICE));
+
     //Crop
     public static final Block BUDDING_LANTERN_FRUIT_CROP = register("budding_lantern_fruit",
             new BuddingLanternFruitBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
@@ -70,7 +74,10 @@ public class ModBlock {
             new SnifferEggshell(AbstractBlock.Settings.copy(Blocks.SNIFFER_EGG)));
 
     public static final Block CURD_BLOCK = register("curd_block",
-            new CurdBlock(AbstractBlock.Settings.copy(Blocks.HONEY_BLOCK).strength(0.5F, 6.0F)));
+            new CurdBlock(CHEESE_WHEEL, AbstractBlock.Settings.copy(Blocks.HONEY_BLOCK).strength(0.5F, 6.0F)));
+
+    public static final Block CHERRY_CURD_BLOCK = register("cherry_curd_block",
+            new CurdBlock(CHERRY_CHEESE_WHEEL, AbstractBlock.Settings.copy(Blocks.HONEY_BLOCK).strength(0.5F, 6.0F)));
 
     public static Block register(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(TrailAndTalesDelightMod.MOD_ID, name), block);

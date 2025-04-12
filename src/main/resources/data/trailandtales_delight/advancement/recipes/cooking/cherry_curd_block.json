@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "trailandtales_delight:cheese_slice"
+            "items": "trailandtales_delight:curd_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "trailandtales_delight:cooking/cherry_cheese_slice"
+        "recipe": "trailandtales_delight:cooking/cherry_curd_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "trailandtales_delight:cooking/cherry_cheese_slice"
+      "trailandtales_delight:cooking/cherry_curd_block"
     ]
   }
 }
