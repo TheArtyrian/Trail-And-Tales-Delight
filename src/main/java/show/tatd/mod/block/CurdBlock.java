@@ -28,11 +28,9 @@ import java.util.List;
 public class CurdBlock extends Block {
     public static final IntProperty AGE = IntProperty.of("age", 0, 600); //
     protected static final VoxelShape SHAPE = Block.createCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D);
-    private final Block TRANSFORM_CHEESE;
 
-    public CurdBlock(Block transform, AbstractBlock.Settings properties) {
+    public CurdBlock(AbstractBlock.Settings properties) {
         super(properties);
-        this.TRANSFORM_CHEESE = transform;
         this.setDefaultState(this.stateManager.getDefaultState().with(AGE, 0));
     }
 
@@ -57,12 +55,10 @@ public class CurdBlock extends Block {
 
             if (brightness <= 8) {
                 if (age < 600) {
-                    int setter = age + 30;
-                    if (setter > 600) setter = 600;
-                    level.setBlockState(pos, state.with(AGE, setter), 2);
+                    level.setBlockState(pos, state.with(AGE, age + 30), 2);
                     level.scheduleBlockTick(pos, this, 600);
                 } else {
-                    level.setBlockState(pos, this.TRANSFORM_CHEESE.getDefaultState(), 2);
+                    level.setBlockState(pos, ModBlock.CHEESE_WHEEL.getDefaultState(), 2);
                     level.playSound(null, pos, SoundEvents.BLOCK_HONEY_BLOCK_STEP, SoundCategory.BLOCKS, 0.5F, 1.0F);
                 }
             } else {

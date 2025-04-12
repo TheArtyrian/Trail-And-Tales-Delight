@@ -44,9 +44,6 @@ public class ModItem {
     public static final Item CHEESE_WHEEL = register("cheese_wheel",
             new BlockItem(ModBlock.CHEESE_WHEEL, basicItem()
             ));
-    public static final Item CHERRY_CHEESE_WHEEL = register("cherry_cheese_wheel",
-            new BlockItem(ModBlock.CHERRY_CHEESE_WHEEL, basicItem()
-            ));
 
     //Cake&Pie Slice
     public static final Item CHERRY_CHEESE_PIE_SLICE = register("cherry_cheese_pie_slice",
@@ -96,9 +93,6 @@ public class ModItem {
 
     public static final BlockItem CURD_BLOCK = (BlockItem) register("curd_block",
             new BlockItem(ModBlock.CURD_BLOCK, basicItem()
-            ));
-    public static final BlockItem CHERRY_CURD_BLOCK = (BlockItem) register("cherry_curd_block",
-            new BlockItem(ModBlock.CHERRY_CURD_BLOCK, basicItem()
             ));
 
     //Basic Food
