@@ -35,7 +35,7 @@ public class StuffedSnifferEggBlock extends FeastBlock {
         if (servings > 0) {
             if (!serving.getItem().hasRecipeRemainder() || ItemStack.areItemsEqual(heldStack, serving.getItem().getRecipeRemainder(serving))) {
                 levelacc.setBlockState(pos, state.with(getServingsProperty(), servings - 1), 3);
-                if (!player.getAbilities().creativeMode && serving.getItem().getRecipeRemainder(serving).isEmpty()) {
+                if (!player.getAbilities().creativeMode && !serving.getItem().getRecipeRemainder(serving).isEmpty()) {
                     heldStack.decrement(1);
                 }
                 if (!player.getInventory().insertStack(serving)) {

@@ -12,6 +12,7 @@ public class TrailAndTalesDelightModClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.BUDDING_LANTERN_FRUIT_CROP, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.LANTERN_FRUIT_CROP, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.BUDDING_LANTERN_FRUIT_CROP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.POTTERY_COOKING_POT, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.SNIFFER_EGGSHELL, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.COOKED_SNIFFER_EGG_BLOCK, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.STUFFED_SNIFFER_EGG_BLOCK, RenderLayer.getTranslucent());
