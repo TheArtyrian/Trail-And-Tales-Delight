@@ -39,8 +39,8 @@
   "block.trailandtales_delight.sniffer_egg_soup": "Sniffer Egg Soup",
   "item.trailandtales_delight.cherry_iron_knife": "Cherry Iron Knife",
   "item.trailandtales_delight.sniffer_eggshell_knife": "Sniffer Eggshell Knife",
-  "block.trailandtales_delight.curd_block.tooltip": "When the Curd Block is in a low brightness environment, it will transform into a cheese wheel after waiting for a period of time",
-  "item.trailandtales_delight.pitcher_plant.tooltip": "Only used as raw material. Cutting it with a knife in a Cutting Board can obtain Pitcher Plant and Pitcher Taro",
+  "block.trailandtales_delight.curd_block.tooltip": "Turns into Cheese when left in a dark place",
+  "item.trailandtales_delight.pitcher_plant.tooltip": "Can be cut to obtain a Pitcher Plant and Taro",
   "advancements.tat_delight.title": "Trail&Tales Delight",
   "advancements.tat_delight.descr": "Embark on the journey with the fragrance of cherry blossoms and the ancient charm...",
   "ItemGroup.trailandtales_delight.item": "Trail&Tales Delight"

@@ -20,16 +20,10 @@
       "item": "minecraft:potato"
     },
     {
-      "tag": "c:foods/berry"
+      "item": "trailandtales_delight:fried_sniffer_egg"
     },
     {
-      "fabric:type": "fabric:difference",
-      "base": {
-        "tag": "c:foods/vegetable"
-      },
-      "subtracted": {
-        "item": "minecraft:melon_slice"
-      }
+      "item": "trailandtales_delight:cooked_pitcher_taro"
     }
   ],
   "recipe_book_tab": "meals",
