@@ -47,6 +47,9 @@ public class ModItem {
     public static final Item CHERRY_CHEESE_WHEEL = register("cherry_cheese_wheel",
             new BlockItem(ModBlock.CHERRY_CHEESE_WHEEL, basicItem()
             ));
+    public static final Item TRUFFLE_CHEESE_WHEEL = register("truffle_cheese_wheel",
+            new BlockItem(ModBlock.TRUFFLE_CHEESE_WHEEL, basicItem()
+            ));
 
     //Cake&Pie Slice
     public static final Item CHERRY_CHEESE_PIE_SLICE = register("cherry_cheese_pie_slice",
@@ -63,6 +66,9 @@ public class ModItem {
     public static final Item CHERRY_CHEESE_SLICE = register("cherry_cheese_slice",
             new TATDConsumableItem(foodItem(TATDFoodValues.CHERRY_CHEESE_SLICE),
                     true));
+    public static final Item TRUFFLE_CHEESE_SLICE = register("truffle_cheese_slice",
+            new TATDConsumableItem(foodItem(TATDFoodValues.TRUFFLE_CHEESE_SLICE),
+                    false));
 
     //Crop
     public static final Item LANTERN_FRUIT_SEEDS = register("lantern_fruit_seeds",
@@ -99,6 +105,9 @@ public class ModItem {
             ));
     public static final BlockItem CHERRY_CURD_BLOCK = (BlockItem) register("cherry_curd_block",
             new BlockItem(ModBlock.CHERRY_CURD_BLOCK, basicItem()
+            ));
+    public static final BlockItem TRUFFLE_CURD_BLOCK = (BlockItem) register("truffle_curd_block",
+            new BlockItem(ModBlock.TRUFFLE_CURD_BLOCK, basicItem()
             ));
 
     //Basic Food

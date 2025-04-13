@@ -36,6 +36,9 @@ public class TATDFoodValues {
             .nutrition(6).saturationModifier(0.5f)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, FIFE_SECONDS, 0), 1.0F)
             .build();
+    public static final FoodComponent TRUFFLE_CHEESE_SLICE = new FoodComponent.Builder()
+            .nutrition(5).saturationModifier(2.0f)
+            .build();
     public static final FoodComponent PITCHER_POD = new FoodComponent.Builder()
             .nutrition(1).saturationModifier(0.5f)
             .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, TEN_SECONDS, 0), 1.0F)

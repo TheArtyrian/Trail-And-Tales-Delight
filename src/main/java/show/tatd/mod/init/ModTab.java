@@ -45,14 +45,17 @@ public class ModTab {
             itemGroup.add(ModItem.PITCHER_PLANT_TEA);
             itemGroup.add(ModItem.CURD_BLOCK);
             itemGroup.add(ModItem.CHERRY_CURD_BLOCK);
+            itemGroup.add(ModItem.TRUFFLE_CURD_BLOCK);
             itemGroup.add(ModItem.CHERRY_CAKE);
             itemGroup.add(ModItem.CHERRY_CHEESE_PIE);
             itemGroup.add(ModItem.CHEESE_WHEEL);
             itemGroup.add(ModItem.CHERRY_CHEESE_WHEEL);
+            itemGroup.add(ModItem.TRUFFLE_CHEESE_WHEEL);
             itemGroup.add(ModItem.CHERRY_CAKE_SLICE);
             itemGroup.add(ModItem.CHERRY_CHEESE_PIE_SLICE);
             itemGroup.add(ModItem.CHEESE_SLICE);
             itemGroup.add(ModItem.CHERRY_CHEESE_SLICE);
+            itemGroup.add(ModItem.TRUFFLE_CHEESE_SLICE);
             itemGroup.add(ModItem.SNIFFER_EGGSHELL);
             itemGroup.add(ModItem.COOKED_SNIFFER_EGG_BLOCK);
             itemGroup.add(ModItem.STUFFED_SNIFFER_EGG_BLOCK);
