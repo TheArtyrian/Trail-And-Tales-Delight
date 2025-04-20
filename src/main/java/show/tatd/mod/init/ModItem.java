@@ -1,5 +1,6 @@
 package show.tatd.mod.init;
 
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
@@ -198,5 +199,17 @@ public class ModItem {
     }
 
     public static void init() {
+        CompostingChanceRegistry.INSTANCE.add(PITCHER_PLANT, 0.85F);
+        CompostingChanceRegistry.INSTANCE.add(CHERRY_CHEESE_PIE_SLICE, 0.85F);
+        CompostingChanceRegistry.INSTANCE.add(CHERRY_CAKE, 1F);
+        CompostingChanceRegistry.INSTANCE.add(CHERRY_CAKE_SLICE, 0.85F);
+        CompostingChanceRegistry.INSTANCE.add(LANTERN_FRUIT_SEEDS, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(BAKED_PITCHER_POD, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(BAKED_TORCHFLOWER_SEEDS, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(TARO, 0.65F);
+        CompostingChanceRegistry.INSTANCE.add(COOKED_TARO, 0.65F);
+        CompostingChanceRegistry.INSTANCE.add(LANTERN_FRUIT, 0.65F);
+        CompostingChanceRegistry.INSTANCE.add(CHERRY_PETAL, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(DRIED_CHERRY_PETAL, 0.3F);
     }
 }
